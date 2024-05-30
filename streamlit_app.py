@@ -8,10 +8,10 @@ from PIL import Image
 # model = joblib.load('classifier.joblib')
 
 # Load image from file
-image = Image.open('path/to/image.jpg')
+image = Image.open('dollar.jpg')
 
 # Display image on Streamlit app with custom height
-st.image(image.open('dollar.jpg'), use_column_width=True, height=300)
+st.image(image, use_column_width=True, height=300)
 
 def predict_note_authentication(variance, skewness, curtosis, entropy):
     prediction = model.predict([[variance, skewness, curtosis, entropy]])
