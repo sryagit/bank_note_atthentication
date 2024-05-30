@@ -10,11 +10,8 @@ from PIL import Image
 image = Image.open('dollar.png')
 st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
-# Load image from file
-'''
-new_image = image.resize((1000, 300))
-st.image(new_image)
-'''
+# new_image = image.resize((1000, 300))
+# st.image(new_image)
 
 # Display image on Streamlit app with custom height
 #st.image(image, use_column_width=True, height=50)
