@@ -8,7 +8,8 @@ from PIL import Image
 # model = joblib.load('classifier.joblib')
 
 image = Image.open('dollar.png')
-st.image(image, caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+st.image(image.resize((1000, 300)))
+# st.image(image, caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
 
 # new_image = image.resize((1000, 300))
 # st.image(new_image)
