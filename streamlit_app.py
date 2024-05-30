@@ -5,6 +5,8 @@ import joblib
 import streamlit as st 
 from PIL import Image
 
+# model = joblib.load('classifier.joblib')
+
 st.image(Image.open('dollar.jpg'), use_column_width=True, height=300)
 
 def predict_note_authentication(variance, skewness, curtosis, entropy):
