@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import joblib
 import streamlit as st 
-
+from PIL import Image
 
 def predict_note_authentication(variance, skewness, curtosis, entropy):
     prediction = model.predict([[variance, skewness, curtosis, entropy]])
