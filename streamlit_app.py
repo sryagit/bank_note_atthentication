@@ -8,7 +8,7 @@ from PIL import Image
 # model = joblib.load('classifier.joblib')
 
 # Load image from file
-image = Image.open('dollar.jpg')
+image = Image.open('dollar.png')
 
 # Display image on Streamlit app with custom height
 st.image(image, use_column_width=True)
