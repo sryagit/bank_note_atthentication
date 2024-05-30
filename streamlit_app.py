@@ -9,9 +9,11 @@ from PIL import Image
 
 # Load image from file
 image = Image.open('dollar.png')
+new_image = image.resize((600, 400))
+    st.image(new_image)
 
 # Display image on Streamlit app with custom height
-st.image(image, use_column_width=True, height=50)
+#st.image(image, use_column_width=True, height=50)
 
 def predict_note_authentication(variance, skewness, curtosis, entropy):
     prediction = model.predict([[variance, skewness, curtosis, entropy]])
