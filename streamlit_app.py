@@ -34,8 +34,8 @@ def main():
         st.write('1 = banknote is genuine, 0 = banknote is forged')
 
     if st.button("About"):
-        st.text("SRM - 3rd SEM Internship Project")
-        st.text("Built by Suraj R. Yadav")
+        # st.text("SRM - 3rd SEM Internship Project")
+        # st.text("Built by Suraj R. Yadav")
 
 if __name__ == '__main__':
     main()
