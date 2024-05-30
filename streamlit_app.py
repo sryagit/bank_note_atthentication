@@ -5,6 +5,8 @@ import joblib
 import streamlit as st 
 from PIL import Image
 
+st.image(dollar.jpg, caption='Image Caption', use_column_width=True)
+
 def predict_note_authentication(variance, skewness, curtosis, entropy):
     prediction = model.predict([[variance, skewness, curtosis, entropy]])
     return prediction
