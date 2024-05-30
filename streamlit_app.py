@@ -4,7 +4,6 @@ import pandas as pd
 import joblib
 import streamlit as st 
 
-model = joblib.load('classifier.joblib')
 
 def predict_note_authentication(variance, skewness, curtosis, entropy):
     prediction = model.predict([[variance, skewness, curtosis, entropy]])
