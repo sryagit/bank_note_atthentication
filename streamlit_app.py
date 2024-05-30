@@ -9,7 +9,7 @@ from PIL import Image
 
 # Load image from file
 image = Image.open('dollar.png')
-new_image = image.resize((2000, 300))
+new_image = image.resize((500, 300))
 st.image(new_image)
 
 # Display image on Streamlit app with custom height
