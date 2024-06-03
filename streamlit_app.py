@@ -34,7 +34,7 @@ def main():
         st.write('0 = banknote is forged')
         st.write('1 = banknote is genuine')
 
-   if st.button("About"):
+    if st.button("About"):
         st.text("Classifier name : Random Forest")
         st.text("Accuracy Score : 99.27")
         st.text("SRM - 3rd SEM Internship Project")
