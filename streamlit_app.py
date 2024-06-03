@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import joblib
@@ -22,7 +21,8 @@ def predict_note_authentication(variance, skewness, curtosis, entropy):
     return prediction
 
 def main():
-    st.title("Banknote Authentication Classifier")
+    #st.title("Banknote Authentication Classifier")
+    st.title("Bank Note Authentication Web APP")
     variance = st.text_input("variance", placeholder="Type Here")
     skewness = st.text_input("skewness", placeholder="Type Here")
     curtosis = st.text_input("curtosis", placeholder="Type Here")
