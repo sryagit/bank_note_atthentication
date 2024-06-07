@@ -23,7 +23,7 @@ def main():
     if st.button("Get Prediction"):
         output = predict_note_authentication(variance, skewness, curtosis, entropy)
         if output == 0:
-            st.markdown("<h2>Result : <h3 style='color:red'>0 <h3></h3>", unsafe_allow_html=True)
+            st.markdown("<p>Result : <h2 style='color:red'>0 <h2></p>", unsafe_allow_html=True)
         else:
             st.markdown("<h3 style='color:green'>Result : 1 </h3>", unsafe_allow_html=True)
         st.write('0 = banknote is forged')
