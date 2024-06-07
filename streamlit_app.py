@@ -30,10 +30,10 @@ def main():
         st.markdown("<h5 style='color:red'> 0 <span style='color:white'> = </span> banknote is forged </h5>",  unsafe_allow_html=True)
         st.markdown("<h5 style='color:LawnGreen'> 1 <span  style='color:White'> = </span> banknote is genuine</h5>", unsafe_allow_html=True)
 
-    if st.button("About"):
-        st.text("Classifier : Random Forest")
-        st.text("Accuracy : 99.27 %")
-        st.text("Built by : Suraj R. Yadav")
+        if st.button("About"):
+            st.text("Classifier : Random Forest")
+            st.text("Accuracy : 99.27 %")
+            st.text("Built by : Suraj R. Yadav")
 
 if __name__ == '__main__':
     main()
