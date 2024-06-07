@@ -28,7 +28,7 @@ def main():
             st.markdown("<h3>Result :<span style='color:green'> 1 </span></h3>", unsafe_allow_html=True)
             
         st.markdown("<p style='color:red'> 0 <span style='color:white'> =  </span> banknote is forged </p>",  unsafe_allow_html=True)
-        st.markdown("<p style='color:lime'> 1 <span  style='color:white'>  = </span> banknote is genuine</p>", unsafe_allow_html=True)
+        st.markdown("<p style='color:LightGreen'> 1 <span  style='color:White'>  = </span> banknote is genuine</p>", unsafe_allow_html=True)
         st.text("Classifier : Random Forest")
         st.text("Accuracy : 99.27 %")
         st.text("Built by : Suraj R. Yadav")
