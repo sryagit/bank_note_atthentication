@@ -23,10 +23,10 @@ def main():
     if st.button("Get Prediction"):
         output = predict_note_authentication(variance, skewness, curtosis, entropy)
         if output == 0:
-            st.markdown("<h3>Result :<span style='background-color:red'> 0 </span></h3>", unsafe_allow_html=True)
+            st.markdown("<h3>Result :<span style='color:red'> 0 </span></h3>", unsafe_allow_html=True)
         else:
             st.markdown("<h3>Result :<span style='color:green'> 1 </span></h3>", unsafe_allow_html=True)
-        st.write('0 = banknote is forged')
+        st.write('<span style='color:green'> 0 = banknote is forged</span>')
         st.write('1 = banknote is genuine')
         st.text("Classifier : Random Forest")
         st.text("Accuracy : 99.27 %")
