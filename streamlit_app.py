@@ -15,7 +15,7 @@ def predict_note_authentication(variance, skewness, curtosis, entropy):
 
 def main():
     st.title("Bank Note Authentication Web APP")
-    variance = st.text_input("variance", placeholder="Type Here")
+    variance = st.text_input("<h3>variance</h3>", placeholder="Type Here")
     skewness = st.text_input("skewness", placeholder="Type Here")
     curtosis = st.text_input("curtosis", placeholder="Type Here")
     entropy = st.text_input("entropy", placeholder="Type Here")
@@ -23,11 +23,12 @@ def main():
     if st.button("Get Prediction"):
         output = predict_note_authentication(variance, skewness, curtosis, entropy)
         if output == 0:
-            st.markdown("<h3>Result :<span style='color:red'> 0 = banknote is forged </span></h3>", unsafe_allow_html=True)
+            st.markdown("<h3>Result :<span style='color:red'> 0 </span></h3>", unsafe_allow_html=True)
         else:
             st.markdown("<h3>Result :<span style='color:green'> 1 </span></h3>", unsafe_allow_html=True)
-        st.markdown("<p style=\'color:red\'> 0 = banknote is forged </p>",  unsafe_allow_html=True)
-        st.write('1 = banknote is genuine')
+            
+        st.markdown("<p style='color:red'> 0 = banknote is forged </p>",  unsafe_allow_html=True)
+        st.markdown("<p style='color:red'> 1 = banknote is genuine</p>", unsafe_allow_html=True)
         st.text("Classifier : Random Forest")
         st.text("Accuracy : 99.27 %")
         st.text("Built by : Suraj R. Yadav")
