@@ -9,7 +9,6 @@ model = joblib.load('classifier.joblib')
 image = Image.open('dollar.png')
 st.image(image.resize((1000, 300)))
 
-
 def predict_note_authentication(variance, skewness, curtosis, entropy):
     prediction = model.predict([[variance, skewness, curtosis, entropy]])
     return prediction
@@ -28,7 +27,7 @@ def main():
         st.write('1 = banknote is genuine')
         st.text("Classifier : Random Forest")
         st.text("Accuracy : 99.27 %")
-
+        st.text("Built by : Suraj R. Yadav")
 
 if __name__ == '__main__':
     main()
