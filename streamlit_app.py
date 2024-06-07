@@ -26,8 +26,8 @@ def main():
         st.success(f'Result: {output}')
         st.write('0 = banknote is forged')
         st.write('1 = banknote is genuine')
-        st.text("Classifier name : Random Forest")
-        st.text("Accuracy Score : 99.27 %")
+        st.text("Classifier : Random Forest")
+        st.text("Accuracy : 99.27 %")
 
 
 if __name__ == '__main__':
