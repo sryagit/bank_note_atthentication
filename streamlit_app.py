@@ -15,10 +15,10 @@ def predict_note_authentication(variance, skewness, curtosis, entropy):
 
 def main():
     st.title("Bank Note Authentication Web APP")
-    variance = st.text_input("<h3>variance</h3>", placeholder="Type Here")
-    skewness = st.text_input("skewness", placeholder="Type Here")
-    curtosis = st.text_input("curtosis", placeholder="Type Here")
-    entropy = st.text_input("entropy", placeholder="Type Here")
+    variance = st.text_input("Variance", placeholder="Type Here")
+    skewness = st.text_input("Skewness", placeholder="Type Here")
+    curtosis = st.text_input("Curtosis", placeholder="Type Here")
+    entropy = st.text_input("Entropy", placeholder="Type Here")
 
     if st.button("Get Prediction"):
         output = predict_note_authentication(variance, skewness, curtosis, entropy)
