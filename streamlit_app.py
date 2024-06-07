@@ -22,10 +22,7 @@ def main():
 
     if st.button("Get Prediction"):
         output = predict_note_authentication(variance, skewness, curtosis, entropy)
-        if output == 0:
-            st.markdown("<h3>Result: 0</h3>", unsafe_allow_html=True)
-        else:
-            st.markdown("<h3>Result: 1</h3>", unsafe_allow_html=True)
+        st.success(f'Result: {output}')
         st.write('0 = banknote is forged')
         st.write('1 = banknote is genuine')
         st.text("Classifier : Random Forest")
@@ -34,3 +31,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
