@@ -2,9 +2,7 @@ import numpy as np
 import pandas as pd
 import joblib
 import streamlit as st
-pip install --upgrade streamlit
 from PIL import Image
-from streamlit import SessionState
 
 model = joblib.load('classifier.joblib')
 
@@ -22,14 +20,12 @@ def main():
     curtosis = st.text_input("Curtosis", placeholder="Type Here")
     entropy = st.text_input("Entropy", placeholder="Type Here")
 
-    state = SessionState.get(prediction=None)
-
     if st.button("Get Prediction"):
         output = predict_note_authentication(variance, skewness, curtosis, entropy)
-        state.prediction = output
+        st.session_state['prediction'] = output
 
-    if state.prediction is not None:
-        if state.prediction == 0:
+    if 'prediction' in st.session_state:
+        if st.session_state['prediction'] == 0:
             st.markdown("<h3>Result :<span> 0 </span></h3>", unsafe_allow_html=True)
         else:
             st.markdown("<h3>Result :<span> 1 </span></h3>", unsafe_allow_html=True)
