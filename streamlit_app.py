@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import joblib
 import streamlit as st
+pip install --upgrade streamlit
 from PIL import Image
 from streamlit import SessionState
 
