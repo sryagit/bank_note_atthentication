@@ -10,7 +10,7 @@ image = Image.open('dollar.png')
 st.image(image.resize((1000, 300)))
 
 def predict_note_authentication(variance, skewness, curtosis, entropy):
-    prediction = model.predict([[variance, skewness, curtosis, entropy]])
+    prediction = model.predict([[variance, skewness, curtosis, entropy]], feature_names=['variance', 'skewness', 'curtosis', 'entropy'])
     return prediction
 
 def main():
