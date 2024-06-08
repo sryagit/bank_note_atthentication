@@ -26,7 +26,8 @@ def main():
             st.markdown("<h3>Result :<span style='color:red'> 0 </span></h3>", unsafe_allow_html=True)
         else:
             st.markdown("<h3>Result :<span style='color:LawnGreen'> 1 </span></h3>", unsafe_allow_html=True)
-            
+
+    if st.button("About"):
     st.markdown("<h5 style='color:red'> 0 <span style='color:white'> = </span> banknote is forged </h5>",  unsafe_allow_html=True)
     st.markdown("<h5 style='color:LawnGreen'> 1 <span  style='color:White'> = </span> banknote is genuine</h5>", unsafe_allow_html=True)
     st.text("Classifier : Random Forest")
